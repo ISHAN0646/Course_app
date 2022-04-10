@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    top: 0;
+    width: 100%;
+    position: absolute;
+    height: 38rem;
+    background: linear-gradient(rgba(0,0,0,0.1),#009688), url(https://greatives.eu/themes/osmosis/wp-content/uploads/2014/10/handsome-hipster-modern-man-designer-working-home-using-laptop-at-home.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    margin-top: 68px;
+    color: #ccfffa;
+    margin-left: 340px;
+    margin-bottom: 56px;
+    font-weight: bolder;
+}
+.fa-sketch{
+    color:white;
+    font-size: 100px;
+    margin-left: 690px;
+}
+
+
+
+
+header a.st{
+    text-decoration: none;
+    width: 163px;
+    margin-left: -150px;
+    border: 1px solid white;
+    text-align: center;
+    height: 50px;
+    padding: 3px;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    top: 100px;
+    font-family: cursive;
+    
+}
+header a.st span{
+    width: 2%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: 0.4s;
+}
+header a.st:hover span{
+    width: 100%;
+}
+header a.st:hover{
+    color: #009688;
+}
+main{
+    background: #007bff;
+    height: 179vh;
+    position: absolute;
+    top: 626px;
+    width: 100%;
+}
+main h1{
+    text-align: center;
+    margin: 50px auto 120px;
+    color: #fff;
+}
+.main{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.service{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform 0.8s;
+}
+.service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff;
+    border: 18px solid #007bff;
+}
+.service-logo img{
+    width: 50px;
+    /* background-color: invert; */
+    /* border-radius: 190px; */
+    margin-top: 20px;
+    transition: transform 1s;
+}
+.service h4{
+    height: 35px;
+    width: 80%;
+    background: #fff;
+    margin: 50px auto;
+    position: relative;
+    z-index: -1;
+
+}
+.service h4::after{
+    content: "";
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#fff,#007bff);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+   
+}
+.service h4::before{
+    content: "";
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#007bff,#fff);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadowOne{
+    height: 200px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform 0.8s;
+    /* z-index: -1; */
+}
+.shadowTwo {
+    height: 200px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;   
+    left: 18%;
+    /* z-index: -2; */
+}
+.main:hover .service{
+    transform: translateY(-50px);
+}
+.main:hover .shadowOne{
+    transform: translateY(-25px);
+}
+.main:hover img{
+    transform: rotate(360deg);
+}
+.service a.st{
+    text-decoration: none;
+    /* border: 2px solid #007bff; */
+    /* width: 45px; */
+    /* margin-top: 21px; */
+    position: relative;
+    top: -19px;
+    font-size: 25px;
+    color: #007196;
+    font-family: cursive;
+    /* transition: underline 2s; */
+}
+.service a.st:hover{
+    font-size: 27px;
+    color: black;
+   
+
+}
+section.main2{
+    position: absolute;
+    height: 107vh;
+    width: 100%;
+    top: 199vh;
+    /* border: 2px solid red; */
+    /* background-color: blue; */
+
+}
+section.reasons{
+    height: 100vh;
+    width: 100%;
+    margin-top: 160px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+
+}
+section.reasons h3{
+    font-size: 45px;
+    color: red;
+    text-shadow: red 1px 3px 1px;
+}
+section.reasons img{
+   width: 600px;
+}
+div.c{
+    margin-top: 45px;
+    /* border: 1px solid red; */
+    display: flex;
+    
+}
+div.c ul{
+    margin-left: 95px;
+    font-size: 45px;
+    list-style: none;
+}
+.fa-list{
+    font-size: 32px;
+    margin-right: 12px;
+    color:red;
+}
+li.top{
+    margin-top: -92px;
+}

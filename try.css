@@ -1,0 +1,156 @@
+/* div.form{
+    background: url('https://th.bing.com/th/id/OIP.STKgcG-lsDTdg5r9zrW-lAHaEK?w=323&h=181&c=7&r=0&o=5&dpr=1.25&pid=1.7') no-repeat center center/cover;
+} */
+.css h1{
+    text-align: center;
+    text-decoration: none;
+    color: purple;
+    border: 4px dashed red;
+    /* border-bottom: 4px dashed red; */
+    padding: 9px;
+    margin: 6px;
+    
+}
+#gh{
+    color: purple;
+}
+.abc{
+    color: rgb(255,255,255);
+}
+.xyz{
+    color: #00ff00;
+}
+h1.text{
+    text-shadow: 0px 1px 4px  blue ;
+    text-transform: uppercase;
+}
+table.se{
+    border: 4px dashed #009880;
+    font-family: 'Lobster', cursive;
+   width: 45px;
+   background: linear-gradient(rgba(0,0,0,0.5), #21c5f3,transparent);
+   box-shadow: -1px -7px 6px 3px #980000;
+}
+/* justcontent-horizontal and align items-vertical */
+div.flex{
+    border: 2px solid red;
+    display: flex;
+    width: 50%;
+     /* justify-content: space-between;  */
+    justify-content:center;
+     /* align-items: flex-end;  */
+     height: 56vh; 
+         flex-wrap: wrap;
+         align-content:center;
+}
+div.flex .co{
+    border: 2px solid blue;
+    margin: 12px;
+    height: 12vh;
+    width: 152px;
+}
+
+
+div#two{
+    flex-shrink: 3;
+}
+div.gradient{
+    width: 30%;
+    height: 45vh;
+    border: 2px solid red;
+    margin:23px;
+    background: radial-gradient(green 50%,rgb(255, 72, 0));
+}
+div#pictures{
+    border: 1px solid red;
+    margin: auto;
+    width: 800px;
+    padding: 5px;
+    height: 239px;
+}
+.thumbs{
+    width: 150px;
+    height: 150px;
+    border: 1pxso lid green;
+    padding: 5px;
+    float: left;
+    margin: 45px;
+}
+.thumbs img{
+    width: 100%;
+    height: 100%;
+    
+}
+.lightbox{
+    visibility: hidden;
+    position: fixed;
+    top: 7%;
+    left: 20%;
+    opacity: 0;
+    
+}
+.lightbox:target{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s;
+    
+}
+/* psuedo selectors */
+.pseudo h1::first-letter{
+    font-size: 45px;
+}
+.psuedo p::first-line{
+    font-weight: bold;
+}
+.psuedo h1::before{
+    content: "Using ";
+}
+.psuedo h1::after{
+    content: " and pseudo elements";
+}
+h1::selection{
+    background-color: yellow;
+}
+.psuedo h1{
+    transition: color 3s;
+
+}
+.psuedo h1:hover{
+    color: blue;
+    
+}
+/* responsive designs */
+@media screen and (max-width:1200px) and (min-width:900px) 
+{
+ body{
+     background-color: green;
+ }
+}
+button{
+    transition:  3s;
+    background: transparent;
+    color: black;
+}
+button:hover{
+    color: blue;
+    
+}
+#lightbox{
+    width: 0;
+    height: 0;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    transition: all 2s;
+
+}
+#lightbox:target{
+    width: 35%;
+    height: 35%;
+    background-color: yellow;
+    transform: rotate(360deg);
+}
+
+

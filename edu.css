@@ -1,0 +1,439 @@
+*{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    scroll-behavior: smooth;
+}
+header nav{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dashed black;
+}
+div.li{
+    /* border: 2px solid red; */
+    width: 516px;
+    /* flex-direction: row; */
+}
+nav ul{
+    list-style: none;
+    /* float: left; */
+}
+nav img{
+    width: 293px;
+    height: 60px;
+}
+.li li{
+    display: inline-block;
+    margin: 0px 12px;
+    font-size: 19px;
+    color: black;
+    
+}
+.li li:hover{
+    text-decoration: underline;
+    color: #009688;
+    
+    
+}
+div.lo{
+    /* border: 2px solid red; */
+    background-color: #80808033;
+}
+nav input{
+    margin-right: 23px;
+    margin-top: 21px;
+    width: 222px;
+    border: 3px solid black;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: #0000ff33;
+}
+/* section */
+header section{
+    
+    height: 48rem;
+    background: linear-gradient(rgba(0,0,0,0.1),#009688), url('https://blog.zoom.us/wp-content/uploads/2020/03/culture-community-work-from-home.jpg') no-repeat center center/cover;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+    
+
+.hea h1{
+    position: absolute;
+    margin-top: -278px;
+    margin-left: 34px;
+    font-size: 56px;
+    color: #ccfffa;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Corinthia', cursive;
+font-family: 'Fuzzy Bubbles', cursive;
+}
+.hea h2{
+    font-size: 151px;
+    line-height: 160px;
+    color: transparent;
+    /* position: absolute; */
+    /* top: 356px; */
+    margin-top: 86px;
+    margin-left: 67px;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.hea a.st{
+    margin-top: 300px;
+    text-decoration: none;
+    width: 163px;
+    margin-left: 118px;
+    border: 1px solid white;
+    text-align: center;
+    height: 50px;
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    
+}
+.hea a.st span{
+    width: 2%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: 0.4s;
+}
+.hea a.st:hover span{
+    width: 100%;
+}
+.hea a.st:hover{
+    color: #009688;
+}
+#Courses{
+    color: #009688;
+    height: 71vh;
+ 
+}
+#Courses h2{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Corinthia', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.cobox{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    /* margin-bottom: 100px; */
+    /* border: 2px solid #009688; */
+    
+
+}
+div.sico{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+   
+    margin-bottom: 20px;
+    color: white;
+    
+   position: relative; 
+    
+}
+.sico img{
+    /* height: 15vh; */
+    /* margin-: 20px; */
+    width: 100%;
+    border-radius: 7px;
+}
+/* .sico h1{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Corinthia', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+} */
+div.overlay{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.1),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+div.sico:hover div.overlay{
+    opacity: 1;
+}
+div.code{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-50%);
+}
+.code hr{
+    background: #fff;
+    height: 2px;
+    border:0;
+    margin: 15px auto;
+    width: 60%;
+}
+.code p{
+   font-size: 14px;
+
+}
+div.sico:hover .code{
+     bottom: 40%;
+     opacity: 1;
+}
+.sico a.st{
+    text-decoration: none;
+    /* width: 163px; */
+    margin-left: -8px;
+    border: 1px solid white;
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+    padding: 6px;
+    /* margin-top: 212px; */
+    position: relative;
+    z-index: 1;
+    color: white;
+    bottom: -39px;
+    
+}
+.sico a.st span{
+    width: 2%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: 0.4s;
+}
+.sico a.st:hover span{
+    width: 100%;
+}
+.sico a.st:hover{
+    color: #009688;
+}
+aside{
+    margin-left: 1399px;
+    /* position: relative; */
+    float: right;
+    bottom: 45px;
+   
+}
+
+.fa-level-up-alt{
+    font-weight: 900;
+    width: 96px;
+    font-size: 77px;
+}
+aside img{
+    height: 63px;
+}
+section.teachers{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.1),#009688),  url('https://www.teachervision.com/sites/default/files/inline-images/Virtual-Teaching-Best-Practices.jpg') no-repeat center center/cover;
+    
+
+    /* border: 2px solid red; */
+    margin-top: 289px;
+    color: #009880;
+    
+}
+div.tc{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items:flex-start;
+    /* border: 2px solid red; */
+    margin-top: 56px;
+}
+
+div.tc img{
+    /* height: 67vh; */
+    transition: 1s;
+        /* border-radius: 190px; */
+}
+div.tc img:hover{
+        /* width: 100%; */
+        border-radius: 190px;
+} 
+
+div.ttea{
+    flex-basis: 430px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 330px;
+    margin:45px;
+  
+}
+span.white{
+    background-color: transparent;
+    border-radius: 52px;
+    color: #22ffdc;
+    /* color: transparent; */
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+span.white h1,p{
+    font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Satisfy', cursive;
+}
+.teachers h1{
+    color: white;
+}
+.wrapper{
+    box-sizing: border-box;
+    /* width: 100%; */
+    background: chartreuse;
+    margin-top: 1%;
+}
+.wrapper h1{
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+.team .team-member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+.team .team-member h3{
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+}
+.team .team-member p.role{
+    color: #f00;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+.team .team-member:hover .team-img{
+    top: -52px;
+}
+.team .team-member .team-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -62px;
+    padding: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    /* border: 2px solid red; */
+    
+}
+.team .team-member .team-img img{
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    transition: transform 1s;
+}
+.main:hover img{
+    transform: rotate(360deg);
+}
+
+.fas {
+  color: rgb(255, 115, 0);
+}
+div#About{
+    /* border: 2px solid red; */
+    margin-top: 34px;
+}
+#About{
+    color: #009880;
+}
+div.feed{
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to right,blue,purple), url('https://study.com/cimages/multimages/16/adobestock_133450340.jpeg') no-repeat center center/cover;
+    opacity: 0.8;
+    
+  
+}
+.inp{
+    background: transparent;
+    border: none;
+    outline: none;
+    color:#fff;
+    border-bottom: 1px solid red;
+}
+div.feed input{
+    
+    font-size: 23px;
+   
+
+}
+div.feed select{
+    width: 99%;
+    height: 9%;
+    
+    font-size: 20px;
+    
+}
+
+div.feed h1{
+    color: white;
+}
+div.feed input[type="submit"]{
+    width: 100%;
+    background: #ff5722;
+    border-color: transparent;
+}
+div.feed input[type="submit"]:hover{
+    background: #f44336;
+    cursor: pointer;
+}
+
